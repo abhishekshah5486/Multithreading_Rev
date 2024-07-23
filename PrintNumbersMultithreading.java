@@ -67,5 +67,6 @@ public class PrintNumbersMultithreading {
             SingleNumberPrinterV2 singleNumberPrinterV2 = new SingleNumberPrinterV2(j);
             executorService.submit(singleNumberPrinterV2);
         }
+        executorService.shutdown();
     }
 }
